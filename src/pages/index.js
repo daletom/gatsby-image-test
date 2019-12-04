@@ -4,7 +4,7 @@ import Img from 'gatsby-image'
 
 import Layout from '../components/layout'
 
-const IndexPage = (props) => (
+const IndexPage = props => (
   <Layout>
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
@@ -19,14 +19,14 @@ const IndexPage = (props) => (
 export default IndexPage
 
 export const fluidImage = graphql`
-fragment fluidImage on File {
-  childImageSharp {
-    fluid(maxWidth: 1000) {
-      ...GatsbyImageSharpFluid
+  fragment fluidImage on File {
+    childImageSharp {
+      fluid(maxWidth: 300) {
+        ...GatsbyImageSharpFluid
+      }
     }
   }
-}
-`;
+`
 
 export const pageQuery = graphql`
   query {
