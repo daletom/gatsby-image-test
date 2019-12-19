@@ -9,18 +9,24 @@ const SecondPage = () => (
     <h1>Hi from the second page</h1>
     <p>Welcome to page 2, using imgix React</p>
     <Link to="/">Go back to the homepage</Link>
-    <Imgix
-      src="https://tom.imgix.net/one.jpg"
-      sizes="(max-width: 300px) 100vw, 300px"
-    />
-    <Imgix
-      src="https://tom.imgix.net/two.jpg"
-      sizes="(max-width: 300px) 100vw, 300px"
-    />
-    <Imgix
-      src="https://tom.imgix.net/three.jpg"
-      sizes="(max-width: 300px) 100vw, 300px"
-    />
+    <div class="imgix-wrapper">
+      <Imgix
+        src="https://tom.imgix.net/one.jpg"
+        sizes="(max-width: 800px) 100vw, 800px"
+      />
+    </div>
+    <div class="imgix-wrapper">
+      <Imgix
+        src="https://tom.imgix.net/two.jpg"
+        sizes="(max-width: 800px) 100vw, 800px"
+      />
+    </div>
+    <div class="imgix-wrapper">
+      <Imgix
+        src="https://tom.imgix.net/three.jpg"
+        sizes="(max-width: 800px) 100vw, 800px"
+      />
+    </div>
   </Layout>
 )
 
