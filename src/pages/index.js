@@ -21,7 +21,7 @@ export default IndexPage
 export const fluidImage = graphql`
   fragment fluidImage on File {
     childImageSharp {
-      fluid(maxWidth: 500) {
+      fluid(maxWidth: 700, quality: 50) {
         ...GatsbyImageSharpFluid
       }
     }
