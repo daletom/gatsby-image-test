@@ -212,6 +212,9 @@ img {
   padding: 1em;
   margin-bottom: 1.45rem;
 }
+main {
+  padding-top: 50px;
+}
 .imgix-wrapper {
   position: relative;
   width: 100%;
