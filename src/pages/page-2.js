@@ -1,32 +1,137 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import Imgix from 'react-imgix'
 
 import Layout from '../components/layout'
 
 const SecondPage = () => (
   <Layout>
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2, using imgix React</p>
-    <Link to="/">Go back to the homepage</Link>
-    <div class="imgix-wrapper">
+    <main>
       <Imgix
-        src="https://tom.imgix.net/one.jpg"
-        sizes="(max-width: 800px) 100vw, 800px"
+        class="block"
+        src="https://tom.imgix.net/artsy/1.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1"
+        sizes="(min-width: 1240px) 30vw, 90vw"
       />
-    </div>
-    <div class="imgix-wrapper">
       <Imgix
-        src="https://tom.imgix.net/two.jpg"
-        sizes="(max-width: 800px) 100vw, 800px"
+        class="block"
+        src="https://tom.imgix.net/artsy/2.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1"
+        sizes="(min-width: 1240px) 30vw, 90vw"
       />
-    </div>
-    <div class="imgix-wrapper">
       <Imgix
-        src="https://tom.imgix.net/three.jpg"
-        sizes="(max-width: 800px) 100vw, 800px"
+        class="block"
+        src="https://tom.imgix.net/artsy/3.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1"
+        sizes="(min-width: 1240px) 30vw, 90vw"
       />
-    </div>
+      <Imgix
+        class="block"
+        src="https://tom.imgix.net/artsy/4.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1"
+        sizes="(min-width: 1240px) 30vw, 90vw"
+      />
+      <Imgix
+        class="block"
+        src="https://tom.imgix.net/artsy/5.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1"
+        sizes="(min-width: 1240px) 30vw, 90vw"
+      />
+      <Imgix
+        class="block"
+        src="https://tom.imgix.net/artsy/6.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1"
+        sizes="(min-width: 1240px) 30vw, 90vw"
+      />
+      <Imgix
+        class="block"
+        src="https://tom.imgix.net/artsy/7.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1"
+        sizes="(min-width: 1240px) 30vw, 90vw"
+      />
+      <Imgix
+        class="block"
+        src="https://tom.imgix.net/artsy/8.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1"
+        sizes="(min-width: 1240px) 30vw, 90vw"
+      />
+      <Imgix
+        class="block"
+        src="https://tom.imgix.net/artsy/9.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1"
+        sizes="(min-width: 1240px) 30vw, 90vw"
+      />
+      <Imgix
+        class="block"
+        src="https://tom.imgix.net/artsy/10.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1"
+        sizes="(min-width: 1240px) 30vw, 90vw"
+      />
+      <Imgix
+        class="block"
+        src="https://tom.imgix.net/artsy/11.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1"
+        sizes="(min-width: 1240px) 30vw, 90vw"
+      />
+      <Imgix
+        class="block"
+        src="https://tom.imgix.net/artsy/12.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1"
+        sizes="(min-width: 1240px) 30vw, 90vw"
+      />
+      <Imgix
+        class="block"
+        src="https://tom.imgix.net/artsy/13.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1"
+        sizes="(min-width: 1240px) 30vw, 90vw"
+      />
+      <Imgix
+        class="block"
+        src="https://tom.imgix.net/artsy/14.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1"
+        sizes="(min-width: 1240px) 30vw, 90vw"
+      />
+      <Imgix
+        class="block"
+        src="https://tom.imgix.net/artsy/15.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1"
+        sizes="(min-width: 1240px) 30vw, 90vw"
+      />
+      <Imgix
+        class="block"
+        src="https://tom.imgix.net/artsy/16.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1"
+        sizes="(min-width: 1240px) 30vw, 90vw"
+      />
+      <Imgix
+        class="block"
+        src="https://tom.imgix.net/artsy/17.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1"
+        sizes="(min-width: 1240px) 30vw, 90vw"
+      />
+      <Imgix
+        class="block"
+        src="https://tom.imgix.net/artsy/18.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1"
+        sizes="(min-width: 1240px) 30vw, 90vw"
+      />
+      <Imgix
+        class="block"
+        src="https://tom.imgix.net/artsy/19.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1"
+        sizes="(min-width: 1240px) 30vw, 90vw"
+      />
+      <Imgix
+        class="block"
+        src="https://tom.imgix.net/artsy/20.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1"
+        sizes="(min-width: 1240px) 30vw, 90vw"
+      />
+      <Imgix
+        class="block"
+        src="https://tom.imgix.net/artsy/21.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1"
+        sizes="(min-width: 1240px) 30vw, 90vw"
+      />
+      <Imgix
+        class="block"
+        src="https://tom.imgix.net/artsy/22.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1"
+        sizes="(min-width: 1240px) 30vw, 90vw"
+      />
+      <Imgix
+        class="block"
+        src="https://tom.imgix.net/artsy/23.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1"
+        sizes="(min-width: 1240px) 30vw, 90vw"
+      />
+      <Imgix
+        class="block"
+        src="https://tom.imgix.net/artsy/24.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1"
+        sizes="(min-width: 1240px) 30vw, 90vw"
+      />
+      <Imgix
+        class="block"
+        src="https://tom.imgix.net/artsy/25.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1"
+        sizes="(min-width: 1240px) 30vw, 90vw"
+      />
+    </main>
   </Layout>
 )
 
