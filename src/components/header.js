@@ -13,16 +13,19 @@ const Header = ({ siteTitle }) => (
         <a href="https://www.xigmi.com">Home</a>
       </li>
       <li>
+        <a href="https://js.xigmi.com">IX JS</a>
+      </li>
+      <li>
         <a href="https://variablequality.xigmi.com">Variable Q</a>
       </li>
       <li>
         <a href="https://s3.xigmi.com">S3 Bucket</a>
       </li>
       <li>
-        <a href="https://gatsbyimagetest.netlify.com/"> Gatsby image</a>
+        <a href="https://gatsbyimagetest.netlify.com/">Gatsby image</a>
       </li>
       <li>
-        <a href="https://gatsbyimagetest.netlify.com/page-2"> ix React</a>
+        <a href="https://gatsbyimagetest.netlify.com/page-2">IX React</a>
       </li>
     </ul>
   </nav>
