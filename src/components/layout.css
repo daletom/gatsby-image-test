@@ -84,6 +84,9 @@ sup {
 }
 img {
   border-style: none;
+  display: block;
+  float: left;
+  width: 33%;
 }
 svg:not(:root) {
   overflow: hidden;
