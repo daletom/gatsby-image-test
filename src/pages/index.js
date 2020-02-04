@@ -10,31 +10,33 @@ const IndexPage = props => (
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
     <Link to="/page-2/">Go to page 2</Link>
-    <Img fluid={props.data.image1.childImageSharp.fluid} />
-    <Img fluid={props.data.image2.childImageSharp.fluid} />
-    <Img fluid={props.data.image3.childImageSharp.fluid} />
-    <Img fluid={props.data.image4.childImageSharp.fluid} />
-    <Img fluid={props.data.image5.childImageSharp.fluid} />
-    <Img fluid={props.data.image6.childImageSharp.fluid} />
-    <Img fluid={props.data.image7.childImageSharp.fluid} />
-    <Img fluid={props.data.image8.childImageSharp.fluid} />
-    <Img fluid={props.data.image9.childImageSharp.fluid} />
-    <Img fluid={props.data.image10.childImageSharp.fluid} />
-    <Img fluid={props.data.image11.childImageSharp.fluid} />
-    <Img fluid={props.data.image12.childImageSharp.fluid} />
-    <Img fluid={props.data.image13.childImageSharp.fluid} />
-    <Img fluid={props.data.image14.childImageSharp.fluid} />
-    <Img fluid={props.data.image15.childImageSharp.fluid} />
-    <Img fluid={props.data.image16.childImageSharp.fluid} />
-    <Img fluid={props.data.image17.childImageSharp.fluid} />
-    <Img fluid={props.data.image18.childImageSharp.fluid} />
-    <Img fluid={props.data.image19.childImageSharp.fluid} />
-    <Img fluid={props.data.image20.childImageSharp.fluid} />
-    <Img fluid={props.data.image21.childImageSharp.fluid} />
-    <Img fluid={props.data.image22.childImageSharp.fluid} />
-    <Img fluid={props.data.image23.childImageSharp.fluid} />
-    <Img fluid={props.data.image24.childImageSharp.fluid} />
-    <Img fluid={props.data.image25.childImageSharp.fluid} />
+    <div class="image-wrapper">
+      <Img fluid={props.data.image1.childImageSharp.fluid} />
+      <Img fluid={props.data.image2.childImageSharp.fluid} />
+      <Img fluid={props.data.image3.childImageSharp.fluid} />
+      <Img fluid={props.data.image4.childImageSharp.fluid} />
+      <Img fluid={props.data.image5.childImageSharp.fluid} />
+      <Img fluid={props.data.image6.childImageSharp.fluid} />
+      <Img fluid={props.data.image7.childImageSharp.fluid} />
+      <Img fluid={props.data.image8.childImageSharp.fluid} />
+      <Img fluid={props.data.image9.childImageSharp.fluid} />
+      <Img fluid={props.data.image10.childImageSharp.fluid} />
+      <Img fluid={props.data.image11.childImageSharp.fluid} />
+      <Img fluid={props.data.image12.childImageSharp.fluid} />
+      <Img fluid={props.data.image13.childImageSharp.fluid} />
+      <Img fluid={props.data.image14.childImageSharp.fluid} />
+      <Img fluid={props.data.image15.childImageSharp.fluid} />
+      <Img fluid={props.data.image16.childImageSharp.fluid} />
+      <Img fluid={props.data.image17.childImageSharp.fluid} />
+      <Img fluid={props.data.image18.childImageSharp.fluid} />
+      <Img fluid={props.data.image19.childImageSharp.fluid} />
+      <Img fluid={props.data.image20.childImageSharp.fluid} />
+      <Img fluid={props.data.image21.childImageSharp.fluid} />
+      <Img fluid={props.data.image22.childImageSharp.fluid} />
+      <Img fluid={props.data.image23.childImageSharp.fluid} />
+      <Img fluid={props.data.image24.childImageSharp.fluid} />
+      <Img fluid={props.data.image25.childImageSharp.fluid} />
+    </div>
   </Layout>
 )
 
@@ -43,8 +45,15 @@ export default IndexPage
 export const fluidImage = graphql`
   fragment fluidImage on File {
     childImageSharp {
-      fluid(maxWidth: 700, quality: 50) {
+      fluid(
+        quality: 50
+        jpegProgressive: true
+        sizes: "(min-width: 1240px) 30vw, 90vw"
+        srcSetBreakpoints: [400, 500, 600, 700, 800, 1000, 1200, 1400]
+      ) {
         ...GatsbyImageSharpFluid
+        srcWebp
+        srcSetWebp
       }
     }
   }

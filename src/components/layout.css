@@ -218,6 +218,13 @@ img {
 main {
   padding-top: 50px;
 }
+
+.image-wrapper {
+  width: 33%;
+  height: 33vw;
+  float: left;
+  display: block;
+}
 .imgix-wrapper {
   position: relative;
   width: 100%;
