@@ -26,6 +26,9 @@ const Header = ({ siteTitle }) => (
       <li>
         <a href="https://gatsbyimagetest.netlify.com/page-2">IX React</a>
       </li>
+      <li>
+        <a href="https://vue.xigmi.com">Vue.js</a>
+      </li>
     </ul>
   </nav>
 )
